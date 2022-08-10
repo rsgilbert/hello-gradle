@@ -1,0 +1,14 @@
+// Check if gradle is installed on machine:
+gradle
+
+// See gradle tasks:
+gradle tasks
+
+// Build gradle project
+gradle build
+
+// Generate gradle wrapper
+gradle wrapper --gradle-version 7.2
+
+// Build project using gradle wrapper script:
+./gradlew build

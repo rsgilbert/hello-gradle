@@ -1,1 +1,29 @@
 apply plugin: 'java'
+
+
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    // asking for version 2.2 of the joda-time library in the joda-time group
+    implementation "joda-time:joda-time:2.2"
+    testImplementation "junit:junit:4.12"
+}
+
+jar {
+
+    archiveBaseName = "hello"
+    archiveVersion = "1.0.5"
+
+    manifest {
+        attributes(
+                "Main-Class": "hello.HelloWorld"
+        )
+    }
+
+}
