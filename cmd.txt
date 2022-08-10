@@ -12,3 +12,6 @@ gradle wrapper --gradle-version 7.2
 
 // Build project using gradle wrapper script:
 ./gradlew build
+
+// run project that has application plugin
+./gradlew run

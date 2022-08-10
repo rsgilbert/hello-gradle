@@ -1,5 +1,7 @@
 apply plugin: 'java'
+apply plugin: 'application'
 
+mainClassName = "hello.HelloWorld"
 
 
 repositories {
@@ -20,10 +22,10 @@ jar {
     archiveBaseName = "hello"
     archiveVersion = "1.0.5"
 
-    manifest {
-        attributes(
-                "Main-Class": "hello.HelloWorld"
-        )
-    }
+//    manifest {
+//        attributes(
+//                "Main-Class": "hello.HelloWorld"
+//        )
+//    }
 
 }
